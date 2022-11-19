@@ -2,9 +2,10 @@
 
 .about__container {
   margin-inline: 2rem;
-  .underline {
-    box-shadow: 1px 1px $color-links;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .about__application {
     color: $text-color;
     margin-block-start: 0.5rem;

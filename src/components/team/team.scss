@@ -138,6 +138,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      .team__card {
+        display: grid;
+
+        text-align: center;
+      }
     }
   }
 }

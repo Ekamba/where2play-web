@@ -6,7 +6,9 @@ import { MdEmail } from "react-icons/md";
 const Support = () => {
   return (
     <div className="support__container">
-      <h1>Support</h1>
+      <div className="title">
+        <h1>Support</h1>
+      </div>
       <div className="support__text__wrapper">
         <p className="support__text"> We help you with any kind of</p>
         <p className="support__text">problem accounter with our app.</p>

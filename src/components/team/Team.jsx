@@ -10,7 +10,9 @@ const Team = () => {
   };
   return (
     <div className="team__container">
-      <h1>Our Team</h1>
+      <div className="title">
+        <h1>Our Team</h1>
+      </div>
       <p className="team__description">
         All of the skilled engineers who are making this software a beauty.
       </p>
