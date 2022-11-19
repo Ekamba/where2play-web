@@ -44,8 +44,10 @@ const Team = () => {
             > */}
               <div className="team__items">
                 <img src={thumbnail} alt="profile" />
-                <p className="name">{username}</p>
-                <p className="occupation">{occupation}</p>
+                <div className="name__occupation">
+                  <p className="name">{username}</p>
+                  <p className="occupation">{occupation}</p>
+                </div>
               </div>
               {/* {showIcon && ( */}
               <div className="team__social__medias">
