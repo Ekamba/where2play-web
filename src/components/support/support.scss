@@ -1,0 +1,54 @@
+@use "../../index.scss" as *;
+
+.support__container {
+  margin-inline: 2rem;
+  margin-block: 1rem;
+  h1 {
+    margin-block-end: 2rem;
+  }
+  .support__text__wrapper {
+    margin-block: 3rem;
+  }
+  .support__text {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: $text-color;
+    text-align: center;
+  }
+  .how__we__help {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    .service,
+    .support {
+      p {
+        color: $color-text-gray;
+      }
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+
+      .icons {
+        display: flex;
+        gap: 0.2rem;
+        span {
+          color: $color-text-gray;
+        }
+      }
+    }
+  }
+}
+
+//mobile devices breakpoints
+@media (min-width: 280px) and (max-width: 784px) {
+  .support__container {
+    .how__we__help {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+  }
+}

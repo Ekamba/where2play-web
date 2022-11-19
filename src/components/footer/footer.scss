@@ -1,0 +1,22 @@
+@use "../../index.scss" as *;
+
+.footer__container {
+  margin-top: auto;
+  margin-inline: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 2rem;
+  margin-block-start: 2rem;
+  border-top: 0.1px solid $color-text-gray;
+  .logo {
+    font-size: 1.9rem;
+    color: $color-text-gray;
+    text-shadow: 2px 2px $color-secondary;
+    .number {
+      color: $color-red;
+      font-size: 3rem;
+    }
+  }
+}

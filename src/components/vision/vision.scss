@@ -1,0 +1,74 @@
+@use "../../_index.scss" as *;
+
+.vision__container {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 3rem;
+  margin-inline: 2rem;
+  .vision__text__wrapper {
+    .vision__text {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: $color-links;
+    }
+    .vision__app__text {
+      color: $text-color;
+      margin-block-start: 0.5rem;
+      max-width: 80%;
+      font-size: $text-font-size;
+      line-height: $line-height;
+    }
+  }
+  .mobile__app__container {
+    display: grid;
+    grid-template-columns: repeat(1fr, 2);
+    .mobile__app__info {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: $color-links;
+      margin-block-end: 0.5rem;
+    }
+    .platform {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      margin-block-start: 0.5rem;
+      .apple {
+        height: 28px;
+      }
+      .google {
+        height: 28px;
+      }
+    }
+  }
+}
+
+//mobile devices breakpoints
+@media (min-width: 280px) and (max-width: 784px) {
+  .vision__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .vision__text__wrapper {
+      justify-content: center;
+      .vision__text {
+        font-size: 2rem;
+      }
+    }
+    .mobile__app__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+  .vision__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
